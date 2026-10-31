@@ -1,0 +1,7 @@
+# Solo en el PC de Pablo: pruebas, maqueta y el script que carga los secretos
+local/
+# La web la compila GitHub (Static Site CI) en la rama gh-pages
+site/
+node_modules/
+# Notas internas para Pablo (Hub, secretos): no van al repo público
+PASOS.md

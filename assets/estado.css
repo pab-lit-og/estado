@@ -1,0 +1,127 @@
+/* Tema de la página de estado: sobrio, sin fuentes externas, claro u oscuro según el sistema.
+   Variables de Upptime: https://github.com/upptime/status-page/blob/HEAD/static/themes/light.css */
+
+:root {
+  --body-background-color: #f6f7f9;
+  --body-text-color: #1c2430;
+  --card-background-color: #ffffff;
+  --nav-background-color: #ffffff;
+  --nav-border-bottom-color: #e3e6eb;
+  --nav-current-border-bottom-color: #2f5d8a;
+  --card-border-color: #e3e6eb;
+  --down-border-left-color: #c0392b;
+  --down-background-color: #fbeceb;
+  --degraded-border-left-color: #b7791f;
+  --up-border-left-color: #2f855a;
+  --tag-color: #ffffff;
+  --tag-up-background-color: #2f855a;
+  --tag-down-background-color: #c0392b;
+  --tag-degraded-background-color: #a86d14;
+  --change-background-color: #f3e3c3;
+  --error-button-border-color: #2f5d8a;
+  --error-button-background-color: #2f5d8a;
+  --error-button-color: #ffffff;
+  --submit-button-border-color: #2f5d8a;
+  --submit-button-background-color: #2f5d8a;
+  --submit-button-color: #ffffff;
+  --graph-opacity: 0.9;
+  --graph-filter: none;
+  --apagado: #5c6673;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-background-color: #12161c;
+    --body-text-color: #e6e9ee;
+    --card-background-color: #1a2028;
+    --nav-background-color: #1a2028;
+    --nav-border-bottom-color: #2a323d;
+    --nav-current-border-bottom-color: #7aa7d6;
+    --card-border-color: #2a323d;
+    --down-border-left-color: #e5675b;
+    --down-background-color: #3a1f1d;
+    --degraded-border-left-color: #d69e2e;
+    --up-border-left-color: #48bb78;
+    --tag-color: #12161c;
+    --tag-up-background-color: #48bb78;
+    --tag-down-background-color: #e5675b;
+    --tag-degraded-background-color: #d69e2e;
+    --change-background-color: #3d3220;
+    --error-button-border-color: #7aa7d6;
+    --error-button-background-color: #7aa7d6;
+    --error-button-color: #12161c;
+    --submit-button-border-color: #7aa7d6;
+    --submit-button-background-color: #7aa7d6;
+    --submit-button-color: #12161c;
+    /* las gráficas son PNG claros: en oscuro se invierten para no deslumbrar */
+    --graph-opacity: 0.85;
+    --graph-filter: invert(0.88) hue-rotate(180deg);
+    --apagado: #9aa4b1;
+  }
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+nav {
+  font-weight: 400;
+}
+
+nav .logo img {
+  border-radius: 0;
+}
+
+article {
+  border-radius: 8px;
+}
+
+article.down,
+article.degraded,
+article.up {
+  border-left-width: 4px;
+}
+
+.tag {
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  padding: 0.25rem 0.6rem;
+}
+
+footer p {
+  font-size: 0.85rem;
+  color: var(--apagado);
+}
+
+a {
+  text-underline-offset: 2px;
+}
+
+a:focus-visible,
+input:focus-visible + label {
+  outline: 2px solid var(--nav-current-border-bottom-color);
+  outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "background_color": "#f6f7f9",
+  "theme_color": "#1c2430",
+  "name": "Estado del servicio",
+  "short_name": "Estado",
+  "lang": "es-ES",
+  "display": "minimal-ui",
+  "start_url": "/estado/",
+  "icons": [
+    {
+      "src": "logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
